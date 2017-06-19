@@ -1,26 +1,22 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Ionic 3 roles client
+This application is the client part of a demo that implements and shows the authentication and roles management in a Ionic 3 application.
+The application manags a todo list, that is stored in a remote database an can be seen by the users, and modified by the creators and the editors.
+Only the editors can delete the todos.
 
-## How to use this template
+Is hosted in: [http://ionic3-roles-client.herokuapp.com](http://ionic3-roles-client.herokuapp.com)
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+![Dependencies status](https://david-dm.org/dnchia/Ionic3-roles-client.svg)
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## How to use it
+The demo can be executed like any other Ionic application, using the Ionic CLI command: `ionic serve` to execute it in development mode.
 
-### With the Ionic CLI:
+### Configuration
+The server URL in the providers must be defined in order to make the application work (uses a fake direction).
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## References
+This demo example was done following the tutorial made by Joshua Morony ([@joshuamorony](https://github.com/joshuamorony)) in 
+[Creating Role Based Authentication with Passport in Ionic 2 - Part 2](https://www.joshmorony.com/creating-role-based-authentication-with-passport-in-ionic-2-part-2/), 
+all credits to him.
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+## In the future
+Several parts of the application will be refactored in order to fit more good design principles. For example, the configuration will be in a config file, not hardcoded,

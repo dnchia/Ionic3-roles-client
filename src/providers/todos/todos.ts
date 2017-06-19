@@ -18,7 +18,7 @@ export class TodosProvider {
       let headers = new Headers();
       headers.append('Authorization', this.authService.token);
 
-      this.http.get('https://ionic3-roles-server.herokuapp.com/api/todos', {headers: headers})
+      this.http.get('https://server_dir/api/todos', {headers: headers})
         .map((res) => res.json())
         .subscribe((data) => {
           resolve(data);
@@ -36,7 +36,7 @@ export class TodosProvider {
       headers.append('Content-Type', 'application/json');
       headers.append('Authorization', this.authService.token);
 
-      this.http.post('https://ionic3-roles-server.herokuapp.com/api/todos', JSON.stringify(todo), {headers: headers})
+      this.http.post('https://server_dir/api/todos', JSON.stringify(todo), {headers: headers})
         .map((res) => res.json())
         .subscribe((res) => {
           resolve(res);
@@ -53,7 +53,7 @@ export class TodosProvider {
       let headers = new Headers();
       headers.append('Authorization', this.authService.token);
 
-      this.http.delete('https://ionic3-roles-server.herokuapp.com/api/todos/' + id, {headers: headers})
+      this.http.delete('https://server_dir/api/todos/' + id, {headers: headers})
         .subscribe(
           (res) => {
         resolve(res);
