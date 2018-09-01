@@ -3,8 +3,6 @@ This application is the client part of a demo that implements and shows the auth
 The application manags a todo list, that is stored in a remote database an can be seen by the users, and modified by the creators and the editors.
 Only the editors can delete the todos.
 
-Is hosted in: [http://ionic3-roles-client.herokuapp.com](http://ionic3-roles-client.herokuapp.com)
-
 ![Dependencies status](https://david-dm.org/dnchia/Ionic3-roles-client.svg)
 
 ## How to use it
